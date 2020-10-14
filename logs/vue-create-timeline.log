@@ -1,0 +1,98 @@
+ruby@gds ~/g/software-testing (main)> vue create --no-git --bare --skipGetStarted timeline
+
+
+Vue CLI v4.5.7
+? Please pick a preset: Manually select features
+? Check the features needed for your project: Choose Vue version, Babel, Router, Vuex, CSS Pre-processors, Linter, Unit, E2E
+? Choose a version of Vue.js that you want to start the project with 2.x
+? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): Sass/SCSS (with node-sass)
+? Pick a linter / formatter config: Prettier
+? Pick additional lint features: Lint on save
+? Pick a unit testing solution: Jest
+? Pick an E2E testing solution: Cypress
+? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files
+? Save this as a preset for future projects? No
+
+
+Vue CLI v4.5.7
+✨  Creating project in /home/git/software-testing/timeline.
+⚙️  Installing CLI plugins. This might take a while...
+
+
+> deasync@0.1.20 install /home/git/software-testing/timeline/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-14` exists; testing
+Binary is fine; exiting
+
+> yorkie@2.0.0 install /home/git/software-testing/timeline/node_modules/yorkie
+> node bin/install.js
+
+setting up Git hooks
+can't find .git directory, skipping Git hooks installation
+
+> core-js@2.6.11 postinstall /home/git/software-testing/timeline/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@3.6.5 postinstall /home/git/software-testing/timeline/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /home/git/software-testing/timeline/node_modules/ejs
+> node ./postinstall.js
+
+
+> cypress@3.8.3 postinstall /home/git/software-testing/timeline/node_modules/cypress
+> node index.js --exec install
+
+
+Cypress 3.8.3 is installed in /home/ruby/.cache/Cypress/3.8.3
+
+added 1621 packages from 1196 contributors and audited 1625 packages in 64.497s
+
+55 packages are looking for funding
+  run `npm fund` for details
+
+found 4 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+🚀  Invoking generators...
+📦  Installing additional dependencies...
+
+
+> node-sass@4.14.1 install /home/git/software-testing/timeline/node_modules/node-sass
+> node scripts/install.js
+
+Cached binary found at /home/ruby/.npm/node-sass/4.14.1/linux-x64-83_binding.node
+
+> node-sass@4.14.1 postinstall /home/git/software-testing/timeline/node_modules/node-sass
+> node scripts/build.js
+
+Binary found at /home/git/software-testing/timeline/node_modules/node-sass/vendor/linux-x64-83/binding.node
+Testing binary
+Binary is fine
+added 115 packages from 87 contributors and audited 1741 packages in 29.158s
+
+60 packages are looking for funding
+  run `npm fund` for details
+
+found 4 low severity vulnerabilities
+  run `npm audit fix` to fix them, or `npm audit` for details
+⚓  Running completion hooks...
+
+📄  Generating README.md...
+
+🎉  Successfully created project timeline.
+
+ruby@gds ~/g/software-testing (main)> mv timeline/ client/
+ruby@gds ~/g/software-testing (main)> ll
+total 60K
+drwxr-xr-x 5 ruby ruby 4.0K Oct 14 11:37 ./
+drwx------ 7 ruby ruby 4.0K Oct 14 11:35 ../
+drwxr-xr-x 6 ruby ruby 4.0K Oct 14 11:37 client/
+drwxr-xr-x 8 ruby ruby 4.0K Oct 14 11:35 .git/
+-rw-r--r-- 1 ruby ruby  35K Oct 14 11:35 LICENSE
+drwxr-xr-x 2 ruby ruby 4.0K Oct 14 11:37 logs/
+-rw-r--r-- 1 ruby ruby   78 Oct 14 11:35 README.md
+
