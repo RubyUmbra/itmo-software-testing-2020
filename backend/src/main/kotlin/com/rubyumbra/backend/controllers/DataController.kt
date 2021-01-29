@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.*
 @RestController
 @RequestMapping("/api/data")
 class DataController(private val dataService: DataService) {
+    @GetMapping("/home")
+    fun home(): String = "Home page"
+
     @GetMapping("/{uid}")
     @PreAuthorize("hasRole('USER')")
     fun uid(@PathVariable uid: String): User = dataService.getUserByUid(uid.toLong())
