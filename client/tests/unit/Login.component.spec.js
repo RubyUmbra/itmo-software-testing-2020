@@ -18,6 +18,6 @@ describe("Login component", () => {
   });
   test("Check button exists", () => {
     const wrapper = shallowMount(Login, { store, localVue, router });
-    expect(wrapper.contains("button")).toBe(true);
+    expect(wrapper.find("button").exists()).toBe(true);
   });
 });
