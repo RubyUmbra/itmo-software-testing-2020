@@ -30,7 +30,6 @@ jobs:
         working-directory: client
         run: |
           npm install
-          npm start &
           npm run test:unit
         env:
           CI: true
