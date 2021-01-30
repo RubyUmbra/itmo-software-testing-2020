@@ -165,3 +165,11 @@ Bonus часть:
 - Вероятно самый ресурсоёмкий из трёх.
 - Очень объёмный по возможностям, а значит и по затратам на изучение и настройку (при необходимости дополнительных возможностей вроде GUI). Однако, как и в остальных, для простых тестов хватает маленького подмножества апи.
 - Слишком много похожих названий: Selenium, Selenide, Selenoid. Очень путает, хотя и понятно что так произошло из-за их тесной связи.
+
+# A11y report from Lighthouse.
+
+![a11y_report](lighthouse_report.png)
+
+![a11y_accessibility](lighthouse_report_accessibility.png)
+
+![a11y_best_practices](lighthouse_report_best_practices.png)
